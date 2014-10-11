@@ -1,0 +1,8 @@
+bill: {
+  name: "a name here",
+  amount: 0.00,
+  dueDate: new Moment().toDate(),
+  website: "http://www.google.com",
+  paid: false,
+  frequency: "month"
+}
