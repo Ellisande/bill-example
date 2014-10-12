@@ -12,7 +12,11 @@
    <h2>All my bills</h2>
    <ul>
     {{#each myBills}}
-      <li>{{name}}: {{amount}}</li>
+      {{> bill}}
     {{/each}}
    </ul>
+</template>
+
+<template name="bill">
+  <li>{{name}}: {{amount}}</li>
 </template>
