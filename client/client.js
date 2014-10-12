@@ -31,6 +31,6 @@ Template.billList.upcomingBills = function(){
 
 Template.bill.events = {
   'click .paid': function(event){
-    console.log('Fired');
+    Bills.remove({_id: this._id});
   }
 };
