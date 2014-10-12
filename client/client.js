@@ -1,5 +1,12 @@
 Bills = new Meteor.Collection('bills');
 
 Template.billList.myBills = function(){
-  return Bills.find({name: 'Cox'});
+  var today = moment().toDate();
+  var threeDaysAgo = moment().subtract(3, 'days').toDate();
+  return Bills.find({
+    dueDate: {
+        $lt: today,
+        $gt: threeDaysAgo
+    }
+  });
 };
