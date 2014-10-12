@@ -9,9 +9,21 @@
 </body>
 
 <template name="billList">
-   <h2>All my bills</h2>
+   <h2>Late Bills</h2>
    <ul>
-    {{#each myBills}}
+    {{#each lateBills}}
+      {{> bill}}
+    {{/each}}
+   </ul>
+   <h2>Due Bills</h2>
+   <ul>
+    {{#each dueBills}}
+      {{> bill}}
+    {{/each}}
+   </ul>
+   <h2>Upcoming Bills</h2>
+   <ul>
+    {{#each upcomingBills}}
       {{> bill}}
     {{/each}}
    </ul>
