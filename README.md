@@ -106,7 +106,8 @@ We need to create the collection on both the client side and the server side. Th
 * In the client.js file create a *Bills* collection with the exact same line ```Bills = new Meteor.Collection('bills');```
 
 ####5.3 Setup Some Test Data
-Insert several records so we have some test data. You can create your own data or grab some lines from the test data file as part of this gist.
+Insert several records so we have some test data. You can create your own data or grab some lines from the test data file as part of the instructions gist.
+https://gist.github.com/Ellisande/1266a92d7cdb99d9d8cf#file-test-data-js
 
 Insert the test data lines into your server.js file. Once your server restarts by itself comment them out, or you will end up with duplicates.
 
