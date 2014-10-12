@@ -28,3 +28,9 @@ Template.billList.upcomingBills = function(){
     dueDate: {$gt: threeDaysFromNow}
   });
 };
+
+Template.bill.events = {
+  'click .paid': function(event){
+    console.log('Fired');
+  }
+};
